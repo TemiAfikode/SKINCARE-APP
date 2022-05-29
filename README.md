@@ -6,7 +6,7 @@ A small skincare business application
 
 1. Download and install [**Node JS**](https://nodejs.org/en/) if not already installed.
 2. Clone the [**repository here**](https://github.com/TemiAfikode/SKINCARE-APP.git) or go to the project github page [**here**](https://github.com/TemiAfikode/SKINCARE-APP) and download the zip file of the project. Unzip it.
-3. Navigate to your terminal and change your directory to the **cats-app project directory**.
+3. Navigate to your terminal and change your directory to the **skincare-app project directory**.
 4. Check that you are on the master branch using `git status`.
 5. Run `npm install` to install dependencies.
 
