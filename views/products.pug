@@ -1,0 +1,123 @@
+extends default
+
+block content
+  .products--heading
+    .products--content
+      h3 New Look
+      h1.title Forever Beautiful
+      p.description Service get met adapted matters offence for. Principles man any insipidity age you simplicity understood. Do offering pleasure no ecstatic whatever on mr directly. 
+  .products--list 
+    h3.description Top Branded
+    h1.title Products
+    .products-tab
+      a(href='javascript:void(0)' onclick="openCity(event, 'moisturizers');")
+        .tab.selected Moisturizers
+      a(href='javascript:void(0)' onclick="openCity(event, 'sunscreen');")
+        .tab Sunscreens
+      a(href='javascript:void(0)' onclick="openCity(event, 'masks');")
+        .tab Masks
+
+      #moisturizers.skincare()
+        .shop
+          .products
+            // Image Source: https://d3pllp7nz3wmw5.cloudfront.net/product_images/26386582401_FULL.jpg
+            img.product-image(src='/images/tatcha-moisturizer.jpeg')
+            p.product-name Tatcha
+            p.product-description The Dewy Skin Cream Plumping & Hydrating Moisturizer
+            p.product-price(value='90') $90
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://static.thcdn.com/images/large/webp//productimg/1600/1600/13457066-7674911773849475.jpg
+            img.product-image(src='/images/glow-recipe-moisturizer.webp')
+            p.product-name Glow Recipe
+            p.product-description Plum Plump Hydrating Hyaluronic Acid Moisturizer
+            p.product-price(value='52') $52
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://cdn.shopify.com/s/files/1/0089/3367/1012/products/jellycreamadselct1_1080x.jpg?v=1646055980
+            img.product-image(src='/images/innisfree-moisturizer.jpeg')
+            p.product-name Innisfree
+            p.product-description Dewy Glow Moisturizer with Cherry Blossom & Niacinamide
+            p.product-price(value='32') $32
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://www.boxycharm.com/media/catalog/product/cache/c21f1a59ca19507cbf5a0c02523c07c7/a/d/addl1_FG_FEN_SKMST01_G07_FENTY_What_It_Dew_skincare_Refreshing_Spray_2840.jpg
+            img.product-image(src='/images/fenty-moisturizer.webp')
+            p.product-name Fenty Beauty by Rihanna
+            p.product-description What it Dew skincare Refreshing Spray
+            p.product-price(value='12') $12
+            button.add-to-cart ADD TO CART
+      #sunscreen.skincare(style='display:none')
+        .shop
+          .products
+            // Image Source: https://static.thcdn.com/images/large/webp//productimg/1600/1600/12902784-7634871308243767.jpg
+            img.product-image(src='/images/supergoop-sunscreen.webp')
+            p.product-name Supergoop!
+            p.product-description Glowscreen SPF 40 PA+++ 
+            p.product-price(value='48') $48
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://thekit.ca/wp-content/uploads/2020/07/2020-fenty-thekit.ca-inline-3.jpg
+            img.product-image(src='/images/fenty-sunscreen.jpg')
+            p.product-name Fenty Skin
+            p.product-description Invisible Moisturizer SPF 30
+            p.product-price(value='49') $49
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://media.kohlsimg.com/is/image/kohls/5634349?wid=1200&hei=1200&op_sharpen=1
+            img.product-image(src='/images/glow-sunscreen.jpeg')
+            p.product-name Glow Recipe
+            p.product-description Watermelon Glow Sunscreen SPF 50
+            p.product-price(value='45') $45
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://n.nordstrommedia.com/id/sr3/9816fa51-7c63-4e71-9ed8-d99c30432313.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2
+            img.product-image(src='/images/clinique-sunscreen.jpeg')
+            p.product-name CLINIQUE
+            p.product-description Broad Spectrum SPF 50 Mineral Sunscreen Fluid for Face
+            p.product-price(value='41') $41
+            button.add-to-cart ADD TO CART
+      #masks.skincare(style='display:none')
+        .shop
+          .products
+            // Image Source: https://www.skincaremuddle.com/wp-content/uploads/2022/03/s2536415-main-zoom1-1440x1440.webp
+            img.product-image(src='/images/fenty-mask.webp')
+            p.product-name Fenty Skin
+            p.product-description Cookies N Clean Whipped Face Mask
+            p.product-price(value='48') $48
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://img01.ztat.net/article/spp-media-p1/3b827da37a5e477cab3698acfe331d43/743ae0095f91481d93c8b11b83b3c537.jpg?imwidth=1800&filter=white-packshot
+            img.product-image(src='/images/innisfree-mask.webp')
+            p.product-name Innisfree
+            p.product-description Pore Clearing Clay Mask
+            p.product-price(value='29') $29
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://static.thcdn.com/images/large/webp//productimg/1600/1600/12933023-1934924458103008.jpg
+            img.product-image(src='/images/glow-mask.webp')
+            p.product-name Glow Recipe
+            p.product-description Watermelon + AHA Sleeping Mask.
+            p.product-price(value='59') $59
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://assets.tatcha.com/large/images/large/TAT22_ClayMask_Shot15_PPage_CapOff_1200x1200.jpg
+            img.product-image(src='/images/tatcha-mask.jpeg')
+            p.product-name Tatcha
+            p.product-description Clarifying Mask Exfoliating Pore Treatment.
+            p.product-price(value='92') $92
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://cdn.shopify.com/s/files/1/2474/1834/products/s2551968-av-02_2000x.jpg?v=1648747380
+            img.product-image(src='/images/farmacy-mask.jpeg')
+            p.product-name Farmacy
+            p.product-description 10% Niacinamide Hydrating Night Mask.
+            p.product-price(value='54') $54
+            button.add-to-cart ADD TO CART
+          .products
+            // Image Source: https://cdn.shopify.com/s/files/1/2474/1834/products/HoneyPotionPlus_2Sizes_2000x.jpg?v=1642613367
+            img.product-image(src='/images/farmacy-honey-mask.jpeg')
+            p.product-name Farmacy
+            p.product-description Honey Potion Plus Ceramide Hydration Mask.
+            p.product-price(value='73') $73
+            button.add-to-cart ADD TO CART

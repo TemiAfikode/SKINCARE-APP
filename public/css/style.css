@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --light-orange: rgba(255, 102, 50, .75);
+    --dark-green: #003b00;
+    --dark-grey: #777;
+    --light-grey: #dadce0;
+    --white: #fff;
+}
+
+body {
+    background: var(--light-grey);
+}
+
+.background {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 12%;
+    z-index: 1;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 50px;
+    padding: 8px 0;
+    vertical-align: middle;
+}
+
+nav {
+    background-color: var(--light-orange);
+    text-align: center;
+}
+
+a {
+    color: var(--white);
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 88%;
+    align-items: center;
+    bottom: 0;
+}
+
+.content {
+    max-width: 65%;
+    padding: 0 100px;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    font-size: 50px;
+}
+
+.description {
+    letter-spacing: 7px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.learn-more--btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: var(--light-orange);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 12px 24px;
+    box-shadow: 3px 3px var(--dark-grey);
+    margin: 20px 0;
+}
+
+.error-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    top: 40%;
+    position: absolute;
+    left: 25%;
+}
+
+@media screen and (min-width: 56em) {
+    .logo {
+        float: left;
+        padding: 10px;
+    }
+    nav {
+        float: right;
+        background-color: transparent;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        text-align: center;
+    }
+    .content {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .title {
+        font-size: 35px;
+    }
+}

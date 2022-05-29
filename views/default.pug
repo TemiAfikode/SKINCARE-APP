@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible" content="ie=edge")
+      title= title
+      link(rel="stylesheet" type="text/css" href="/css/style.css")
+      link(rel="stylesheet" type="text/css" href="/css/about-us.css")
+      link(rel="stylesheet" type="text/css" href="/css/products.css")
+    body
+      script(src='/js/main.js')
+      header.header
+        .logo
+          // Image Source: https://pngtree.com/freepng/hair-beauty-logo_6933543.html
+          img(src='/images/logo.png' alt='')
+        nav
+          a(href='/') HOME
+          a(href='/products') PRODUCTS
+          a(href='/about-us') ABOUT US
+        .clear
+      block content
+        
